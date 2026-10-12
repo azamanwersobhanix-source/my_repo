@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="imgs/ui/logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+
+   <meta name="description" content="PakinTech - Your ambassador for Daraz tech gadgets, offering the latest tech news, products, and exclusive deals for gamers, mobile enthusiasts, and PC users.">
+   <meta name="keywords" content="DR MASB, DR MASB Virtual Labs, PakinTech, Daraz, tech gadgets, tech news, gaming gadgets, mobile accessories, PC accessories, tech products, online shopping, PakinTech ambassador">
+   <meta name="robots" content="index, follow">
+   <meta name="author" content="DR. MASB">
+   <meta name="theme-color" content="#01FFA9">
+   <meta name="title" content="PakinTech - Brand Ambassador of Daraz Tech Gadgets">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pakintech.com/">
+    <meta property="og:title" content="PakinTech - Ambassador of Daraz Tech Gadgets">
+    <meta property="og:description" content="Join M. Azam and DR. MASB in their journey as Daraz tech ambassadors, providing exclusive gadgets and deals through DR MASB Virtual Labs.">
+    <meta property="og:image" content="https://pakintech.com/imgs/ui/imge0.png">
+    
+    <meta property="twitter:card" content="Explore the world of tech with DR MASB Virtual Labs and PakinTech, ambassadors of Daraz tech gadgets. Discover exclusive deals and insights into cutting-edge gadgets and tech trends.">
+    <meta property="twitter:url" content="https://pakintech.com/">
+    <meta property="twitter:title" content="PakinTech - Ambassador of Daraz Tech Gadgets">
+    <meta property="twitter:description" content="Discover exclusive tech gadgets and innovations with DR MASB Virtual Labs and PakinTech. Leaders in tech trends and Daraz ambassador insights.">
+    <meta property="twitter:image" content="https://pakintech.com/imgs/ui/imge0.png">
+
+    
+    <title>PakinTech - Ambassador of Daraz Tech Gadgets</title>
+    
+    <style>
+        *{
+            font-family:'Roboto',sans-serif;
+            padding:0;
+            margin:0;
+            color:white;
+         }
+         a{
+             text-decoration: underline;
+             text-decoration-color:#01FFA9;
+             color: orange;
+         }
+         body{
+             background-color:rgb(35,35,35);
+         }
+         @keyframes art{
+             0%{
+                 text-shadow: 0px 0px 0px purple;
+             }
+             100%{
+                 text-shadow: 0px 0px 8px purple;
+             }
+         }
+         header{
+             position:fixed;
+             z-index:3;
+         }
+         .navbar{
+             width:100vw;
+             height:50px;
+             background-color:rgb(50,50,50);
+             display:flex;
+             justify-content:space-evenly;
+             align-items:center;
+          }
+          .csize{
+              font-size:1.4rem;
+          }
+          .icon.logo{
+              width:65px;
+              height:65px;
+              background-image: url('imgs/ui/logo.png');
+              background-size:60px 60px;
+              background-repeat:no-repeat;
+          }
+          .icon{
+              padding:0 10px
+          }
+          .icon.gif{
+              height:100%;
+              width:100%;
+          }
+          .s-btn:hover{
+              cursor:pointer;
+          }
+          .menu:hover{
+              cursor:pointer;
+          }
+          .nav-items{
+              z-index:2;
+              width:60vw;
+              height:100%;
+              font-size:1rem;
+              background-color:rgb(40,40,40);
+              position: fixed;
+              top:0;
+              right:-700px;
+              transition: 0.3s;
+              
+          }
+          .nav-items ul li{
+              list-style:none;
+          }
+          .nav-items ul li:hover{
+              cursor:pointer;
+          }
+          .nav-items ul li i{
+              margin:20px 10px;
+          }
+          .search{
+              z-index:2;
+              width:100vw;
+              height:50px;
+              position:fixed;
+              top:-70px;
+              display:flex;
+              background-color:rgb(25,25,25);
+              border-radius:2px;
+              justify-content:space-between;
+              align-items:center;
+              transition:0.3s
+          }
+          .search .s-text{
+              margin: 2px;
+              border:1px solid orange;
+              background:rgb(60,60,60);
+              flex-grow:1;
+              height:30px;
+              border-top-left-radius:5px;
+              padding:4px;
+              border-bottom-left-radius:5px;
+              
+          }
+          .search .s-text input{
+              background:rgb(60,60,60);
+              width:90%;
+              height:90%;
+              border:none;
+              padding: 2px 4px;
+              font-size:1rem;
+              outline:none;
+          }
+          .search .s-btn2{
+              background-color: orange;
+              opacity: 1;
+              border:1px solid orange;
+              height:30px;
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              border-top-right-radius:5px;
+              padding: 4px 10px;
+              border-bottom-right-radius:5px;
+
+              }
+              .s-btn2:hover{
+                  cursor:pointer;
+              }       
+              .s1 .imgs{
+                  top:50px;
+                  position: relative;
+                  height: 34vh;
+                  padding-left: 4px;
+                  padding-right:4px;
+                  padding-top:4px;
+              }
+              .s1 .imgs .img{
+                  height:90%;
+                  background-image: url('imgs/ui/imge0.png');
+                  background-size:cover;
+                  border-radius:5px;
+              }
+              .dots{
+                  display:flex;
+                  justify-content:center;
+                  align-items: center;
+                  
+              }
+              .dots i{
+                  margin-top:3px;
+                  margin-left: 5px;
+                  font-size:0.7rem;
+                  color: #01FFA9;
+              }
+              .gbtn{
+                  background-color: #01FFA9;
+                  font-weight: bold;
+                  padding:2px;
+                  position:relative;
+                  width:180px;
+                  margin:0 auto;
+                  margin-top:10px;
+                  height:35px;
+                  border-radius:8px;
+                  text-align:center;
+              }
+              .gbtn i{
+                  color:orange;
+              }
+              .gbtn span{
+                  color:black;
+              }
+              .gbtn:hover{
+                  cursor:pointer;
+              }
+              h3{
+                  margin-top: 10px;
+                  padding:5px;
+              }
+              .scrollx{
+                  width:100%;
+                  overflow-x: scroll;
+                  white-space:nowrap;
+                  padding: 1px 0;
+                  overflow-style: hidden;
+              }
+              .scrollx .img-box{
+                  display:inline-block;
+                  padding:4px;
+                  width: 130px;
+                  border-radius:10px;
+                  background-color:rgb(45,45,45);
+                  margin-left:2px;
+               }
+               .pic{
+                   position:relative;
+                   display:flex;
+                   justify-content:center;
+                   align-items:center;
+                   background: white;
+                   overflow:hidden;
+                   border-radius:4px;                   
+                   min-height:100px;
+                   height: 100px;
+                   width:100%;
+               }
+               .pic img{
+                   position:absolute;
+                   top:0;
+                   left:0;
+                   height:100%;
+                   width:100%;
+               }               
+               .img-box .info p.desc{
+                   font-size:0.75rem;
+                   color:white;
+                   padding-left:2px;
+                   white-space:wrap;
+                   overflow:hidden;
+                   height: 43px;
+                   
+               }
+               p.title{
+                   padding-left:2px;
+                   font-size:0.85rem;
+                   color:orange;
+                   
+               }
+               p.title span{color:orange}
+               footer{
+                   margin-top: 10px;
+                   width:100%;
+                   height:180px;
+                   background-color:black;
+               }
+               footer div{
+                   height:30%;
+                   width:100%;
+                   display:flex;
+                   align-items: flex-end;
+                   justify-content: space-around;
+               }
+               .end{
+                   margin-top:50px;
+                   display:block;
+                   text-align:center;
+                   color:grey;
+                   font-size: 0.8rem;
+               }
+               .cover{
+                   display:flex;
+                   justify-content:center;
+                   align-items:center;
+                   background-color:rgb(35,35,35);
+                   height:100%;
+                   width:100%;
+                   position:fixed;
+                   top:0;
+                   left:0;
+                   z-index:4;
+               }
+               #rate{
+                   font-size:0.75rem;
+                   display:flex;
+                   justify-content:space-between;
+                   align-items:center;
+                   padding:3px;
+               }
+               
+              div.ba{
+                  margin: 5px;
+                  padding: 3px;
+                  border-radius: 3px;
+                  border:1px solid orange;
+              }
+              span#artefact{
+                  color:purple;
+                  animation: art 1s ease-in-out infinite alternate;
+              }
+              div.gft{
+                  margin-top:135px;
+                  font-size: 1.03rem;
+                  color:grey;
+                  font-weight: 550;
+              }
+              
+              div.cont{
+                  height: 50px;
+                  margin:5px 0;
+                  padding-top: 5px;
+                  box-shadow:0px 0px 1px 0px black;
+                  background-color:rgb(20,20,20);
+              }
+              div.r{
+                  overflow-x: auto;
+                  white-space: nowrap;
+                  height:50%;
+                  width:100%;
+              }
+              span.itm{
+                  padding: 0 6px;
+                  margin-left: 10px;
+                  border-radius: 50px;
+              }
+              span.itm:hover{
+                  cursor:pointer;
+              }
+              span.itmx{
+                  color: black;
+                  background:#1FFFA9;
+              }
+              span.itmy{
+                  color: white;
+                  background:orange;
+              }
+              .cart{
+                  position:fixed;
+                  right:5px;
+                  display:flex;
+                  justify-content:center;
+                  align-items:center;
+                  bottom:5px;
+                  width: 60px;
+                  height:60px;
+                  border-radius:50px;
+                  background:orange;
+                  box-shadow: 0 0 5px 0 black;
+              }
+              .cart:hover{
+                  cursor:pointer;
+              }
+              .cart i{
+                  font-size: 1.8rem;
+              }
+              div.flash{
+                  position:fixed;
+                  top:50px;
+                  max-height:100vh;
+                  overflow-y:auto;
+                  width:100%;
+                  box-shadow: 0 0 10px 0 rgb(45,45,45);
+                  font-size: 0.9rem;
+                  background-color:rgb(45,45,45);
+              }
+              .flash p{
+                  margin:3px;
+                  margin-top:15px;
+                  opacity:0.9;
+              }              
+    </style>
+    
+</head>
+<body>
+    <div class="cover"><img width="50px" height="50px" src="imgs/ui/logo.png" alt="loader"></div>
+    <header>
+        <div class="search">
+            <div class="s-text"><input type="text" id="text" placeholder="search product..." autofocus></div>
+            <div class="s-btn2"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a class="ni" href="index.html"><i class="fas fa-home"></i>Home</a></li><hr>
+                <li><a class="ni" href="subhtml/category.html"><i class="fas fa-gun"></i>For Gamers</a></li><hr>
+                <li><a class="ni" href="subhtml/category.html"><i class="fas fa-phone"></i>For Mobiles</a></li><hr>
+                <li><a class="ni" href="subhtml/category.html"><i class="fas fa-laptop"></i>For PCs</a></li><hr>
+                <li><a class="ni" href="subhtml/category.html"><i class="fas fa-bolt"></i>Xtras</a></li><hr>
+                <li><a class="ni" href="subhtml/provail.html"><i class="fas fa-suitcase"></i>Availabe products</a></li><hr>
+ 
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="icon logo csize"></div>
+            <div class="icon gif"></div>
+            <div class="icon s-btn"><i class="fas fa-search csize"></i></div>
+            <div class="icon menu"><i class="fas fa-bars csize"></i></div>
+        </div>
+        <div class="flash"></div>
+    </header>
+    
+    <main>
+        
+      <section class="s1">
+          <div class="imgs">
+              <div class="img" id="img-itr"></div>
+              <div class="dots"><i class="far fas fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i><i class="far fa-circle"></i></div>
+              <center><div class="ba">Brand Ambassador of <span style="color:orange">Daraz</span> Tech <span id="artefact">Artefacts</span></div></center>
+              <div class="gbtn"><a href="subhtml/news.html"><span>Pak in Tech News&nbsp;<i class="fas fa-newspaper csize"></i></span></a></div>
+          </div>
+      </section>
+      
+      <section class="s2">
+          <center><div class="gft">Surprise your precious ones with Techy Gifts</div></center>
+          <div class="cont">
+              <div class="r">
+              </div>
+              <div class="r">
+              </div>
+          </div>
+          <h3 id="title">For You</h3>
+          <div class="scrollx" id="fyou"></div>
+      </section>
+      
+      <section class="s3">
+          <h3>For Gamers</h3>
+          <div class="scrollx" id="fgamers"></div>
+      </section>
+      
+      <section class="s4">
+          <h3>For Mobiles</h3>
+          <div class="scrollx" id="fmobiles"></div>
+      </section>
+      
+      <section class="s5">
+          <h3>For PCs</h3>
+          <div class="scrollx" id="fpcs"></div>
+      </section>
+      
+      <section class="s6">
+          <h3>Xtras</h3>
+          <div class="scrollx" id="fx"></div>
+      </section>
+      
+    </main>
+    <footer>
+        <!--<div class="links"><a href="https://www.facebook.com/profile.php?id=61566529724251&mibextid=ZbWKwL" target="_blank"><img src="../imgs/ui/fb.png" width="35px" height="30px" alt="Facebook icon For PakinTech"></a><a href="https://www.youtube.com/@pakintechx" target="_blank"><img src="../imgs/ui/yt.png" alt="YouTube icon For PakinTech" width="35px" height='32px'></a></div>-->
+        <div class="us"><a href="subhtml/about.html">About us</a><a href="subhtml/support.html">Support us</a><a href="subhtml/faqs.html">FAQS</a></div>
+        <span class="end">&copy; 2024&nbsp;DR MASB Virtual Labs | pakintech.com</span>
+    </footer>
+    <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+    <script src="files/fm.js"></script>
+    <script src="files/fpc.js"></script>
+    <script src="files/fg.js"></script>
+    <script src="files/fx.js"></script>
+    <script src="files/cat.js"></script>
+    <script src="js/commoner.js"></script>
+    <script src="js/index.js"></script>
+</body> 
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../imgs/ui/logo.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="title" content="Provisions - Available Products| PakinTech - Ambassador of Daraz Tech Gadgets">
+    <meta name="description" content="Explore the world of tech with DR MASB Virtual Labs and PakinTech, ambassadors of Daraz tech gadgets. Discover exclusive deals and insights into cutting-edge gadgets and tech trends.">
+    <meta name="keywords" content="DR MASB Virtual Labs, PakinTech, Daraz tech gadgets, tech ambassadors, tech gadgets, tech deals, DR. MASB, M. Azam, Daraz Ambassador Program, virtual labs, tech products, online gadgets">
+    <meta name="author" content="DR. MASB">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pakintech.com/subhtml/provail.html">
+    <meta property="og:title" content="Tech Gadgets Inventory | PakinTech - Ambassador of Daraz Tech Gadgets">
+    <meta property="og:description" content="Join M. Azam and DR. MASB in their journey as Daraz tech ambassadors, providing exclusive gadgets and deals through DR MASB Virtual Labs.">
+    <meta property="og:image" content="https://pakintech.com/imgs/ui/imge0.png">
+    
+    <meta property="twitter:card" content="Explore the Tech Gadgets Inventory with DR MASB Virtual Labs and PakinTech, ambassadors of Daraz tech gadgets. Discover exclusive deals and insights into cutting-edge gadgets and tech trends.">
+    <meta property="twitter:url" content="https://pakintech.com/subhtml/provail.html">
+    <meta property="twitter:title" content="DR MASB Virtual Labs | PakinTech - Ambassador of Daraz Tech Gadgets">
+    <meta property="twitter:description" content="Tech Gadgets Inventory | Discover exclusive tech gadgets and innovations with DR MASB Virtual Labs and PakinTech. Leaders in tech trends and Daraz ambassador insights.">
+    <meta property="twitter:image" content="https://pakintech.com/imgs/ui/imge0.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Products Available at PakinTech| Ambassador of Daraz Tech Gadgets</title>
+    <style>
+        *{
+            font-family:'Roboto',sans-serif;
+            padding:0;
+            margin:0;
+            color:white;
+         }
+         a{
+             text-decoration: underline;
+             text-decoration-color:#01FFA9;
+             color: orange;
+         }
+         body{
+             background-color:rgb(35,35,35);
+         }
+         
+         header{
+             position:fixed;
+             z-index:3;
+         }
+         .navbar{
+             width:100vw;
+             height:50px;
+             background-color:rgb(50,50,50);
+             display:flex;
+             justify-content:space-evenly;
+             align-items:center;
+          }
+          .csize{
+              font-size:1.4rem;
+          }
+          .icon.logo{
+              width:100%;
+              height:65px;
+              background-image: url('../imgs/ui/logo.png');
+              background-size:60px 60px;
+              background-repeat:no-repeat;
+          }
+          .icon{
+              padding:0 10px
+          }
+          .nav-items{
+              z-index:2;
+              width:60vw;
+              height:100%;
+              font-size:1rem;
+              background-color:rgb(40,40,40);
+              position: fixed;
+              top:0;
+              right:-700px;
+              transition: 0.5s;
+              
+          }
+          .nav-items ul li{
+              list-style:none;
+          }
+          .nav-items ul li i{
+              margin:20px 10px;
+          }
+          .search{
+              z-index:2;
+              width:100vw;
+              height:50px;
+              position:fixed;
+              top:-70px;
+              display:flex;
+              background-color:rgb(25,25,25);
+              border-radius:2px;
+              justify-content:space-between;
+              align-items:center;
+              transition:0.3s
+          }
+          .search .s-text{
+              margin: 2px;
+              border:1px solid orange;
+              background:rgb(60,60,60);
+              flex-grow:1;
+              height:30px;
+              border-top-left-radius:5px;
+              padding:4px;
+              border-bottom-left-radius:5px;
+              
+          }
+          .search .s-text input{
+              background:rgb(60,60,60);
+              width:90%;
+              height:90%;
+              border:none;
+              padding: 2px 4px;
+              font-size:1rem;
+              outline:none;
+          }
+          .search .s-btn2{
+              background-color: orange;
+              opacity: 1;
+              border:1px solid orange;
+              height:30px;
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              border-top-right-radius:5px;
+              padding: 4px 10px;
+              border-bottom-right-radius:5px;
+      }
+      .s-btn:hover{
+              cursor:pointer;
+            }
+            .menu:hover{
+              cursor:pointer;
+            }
+            .nav-items ul li:hover{
+              cursor:pointer;
+           }
+      section.review{
+          position:relative;
+          height:70vh;
+          top:60px;
+      }
+        h1.title{
+            color:silver;
+            border-bottom:1px solid orange;
+        }
+        div.prText{
+            width:90%;
+            margin:20px auto;
+            padding: 5px;
+            background: rgb(45,45,45);
+            border-radius: 5px;
+        }
+        footer{
+        
+               position:relative;        
+               margin-top:30px;
+               width:100%;
+               height:180px;               
+               background-color:black;
+               }
+        footer div{
+              height:30%;
+              width:100%;
+              display:flex;
+              justify-content: space-around;
+              align-items:flex-end;
+               }
+        .end{
+           margin-top:50px;
+           display:block;
+           text-align:center;
+           color:grey;
+           font-size: 0.8rem;
+               }
+       ul.x > li{
+           margin:10px;
+           color:orange;
+           font-size:1.2rem;
+       }
+       ol > li{
+           font-size:0.8rem;
+           margin-bottom:5px;
+       }
+       .cover{
+                   display:flex;
+                   justify-content:center;
+                   align-items:center;
+                   background-color:rgb(35,35,35);
+                   height:100%;
+                   width:100%;
+                   position:fixed;
+                   top:0;
+                   left:0;
+                   z-index:4;
+               }
+        .cart{
+                  position:fixed;
+                  right:5px;
+                  display:flex;
+                  justify-content:center;
+                  align-items:center;
+                  bottom:5px;
+                  width: 60px;
+                  height:60px;
+                  border-radius:50px;
+                  background:orange;
+                  box-shadow: 0 0 5px 0 black;
+              }
+              .cart:hover{
+                  cursor:pointer;
+              }
+              .cart i{
+                  font-size: 1.8rem;
+              }
+         .anc{
+             color:white;
+             font-size:1rem;
+         }
+         div.flash{
+                  position:fixed;
+                  top:50px;
+                  max-height:100vh;
+                  overflow-y:auto;
+                  width:100%;
+                  box-shadow: 0 0 10px 0 rgb(45,45,45);
+                  font-size: 0.9rem;
+                  background-color:rgb(45,45,45);
+              }
+              .flash p{
+                  margin:3px;
+                  margin-top:15px;
+                  opacity:0.9;
+              }
+    </style>
+</head>
+<body>
+    <div class="cover"><img width="50px" height="50px" src="../imgs/ui/logo.png" alt="loader"></div>
+    
+    <header>
+        <div class="search">
+            <div class="s-text"><input type="text" id="text" placeholder="search product..." autofocus></div>
+            <div class="s-btn2"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a class='ni' href="../index.html"><i class="fas fa-home"></i>Home</a></li><hr>
+                <li><a class="ni" href="category.html"><i class="fas fa-gun"></i>For Gamers</a></li><hr>
+                <li><a class="ni" href="category.html"><i class="fas fa-phone"></i>For Mobiles</a></li><hr>
+                <li><a class="ni" href="category.html"><i class="fas fa-laptop"></i>For PCs</a></li><hr>
+                <li><a class="ni" href="category.html"><i class="fas fa-bolt"></i>Xtras</a></li><hr>
+                <li><a class="ni" href="#"><i class="fas fa-suitcase"></i>Available products</a></li><hr>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="icon logo csize"></div>
+            <div class="icon s-btn"><i class="fas fa-search csize"></i></div>
+            <div class="icon menu"><i class="fas fa-bars csize"></i></div>
+            </div>
+            <div class="flash"></div>
+    </header>
+    
+    <main>
+    <section class="review">
+        <center><h1 class="title">Provisions</h1></center>
+        <div class="prText">
+            <ul class="x" style="padding-left:20px">
+                <li>
+                    For Gamers
+                    <ol class="fg"style="padding-left:20px">
+                    </ol>
+               </li>
+               <li>
+                    For Mobiles
+                    <ol class="fm" style="padding-left:20px">
+                    </ol>
+               </li>
+               <li>
+                    For Pcs
+                    <ol class="fp" style="padding-left:20px">
+                    </ol>
+               </li>
+               <li>
+                    Xtras
+                    <ol class="fx" style="padding-left:20px">
+                    </ol>
+               </li>
+            </ul>
+        </div>
+        <footer>
+        
+        <div class="us"><a href="about.html">About us</a><a href="support.html">Support us</a><a href="faqs.html">FAQS</a></div>
+        <span class="end">&copy; 2024&nbsp;DR MASB Virtual Labs | pakintech.com</span>
+    </footer>
+    </section>
+    </main>
+    
+    <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+<script src="../files/cat.js"></script>
+<script src="../js/commoner.js"></script>
+<script src="../js/provail.js"></script>
+</body>
+</html>
