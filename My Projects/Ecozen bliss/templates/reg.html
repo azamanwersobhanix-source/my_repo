@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/reg.css">
+    <title>Register</title>
+</head>
+<body>
+    <!--***********************************-->
+
+    <section class="reg">
+        <h1>Register</h1>
+        <div class="form">
+            <form action="/submit" method="post">
+                <label for="name">Full Name</label><br>
+                <input id="name" type="text" placeholder="write your name...">
+                <label for="uname">Username</label><br>
+                <input id="uname" type="text" placeholder="write your @username...">
+
+                <label for="gender">Gender</label><br><br>
+                <input style="margin: 0;padding: 0;width: auto;" type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input style="margin: 0;padding: 0;width: auto;" type="radio" id="female" name="gender" value="female">
+                <label for="male" style="display: inline;">Female</label><br><br>
+                
+                <label for="email">Email</label><br>
+                <input id="email" type="email" placeholder="write your email...">
+                <label for="num">Contact</label><br>
+                <input id="num" type="number" placeholder="write your contact...">
+                <label for="pwd">Password</label><br>
+                <input id="pwd" type="password" placeholder="password...">
+                <label for="pwdc">Confirm Password</label><br>
+                <input id="pwdc" type="password" placeholder="confirm password...">
+                <h1>Address</h1>
+                <label for="state">State</label><br>
+                <select id="state" style="display: block;">
+                    <option value="Sindh">Sindh</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Balochistan">Balochistan</option>
+                    <option value="NWFP">NWFP</option>
+                    <option value="Gilgit">Gilgit</option>
+                </select>
+                <label for="city">City</label><br>
+                <select id="city" style="display: block;">
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="faisalabad">Faisalabad</option>
+                    <option value="rawalpindi">Rawalpindi</option>
+                    <option value="thatta">Thatta</option>
+                </select>
+                <label for="adr">Area Address</label><br>
+                <input id="adr" type="text" placeholder="Area address...">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!--***********************************-->
+</body>
+</html>

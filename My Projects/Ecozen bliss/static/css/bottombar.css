@@ -1,0 +1,62 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.bab{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: white;
+}
+.bab .container{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 10px ;
+}
+.child{
+    text-align: center;
+}
+.child i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.video i{
+    font-size: 60px;
+}
+
+.cart .circle{
+    position: relative;
+    bottom: 28px;
+    left: 70%;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 50%;
+    font-size: 14px;
+    background:rgb(255, 0, 149);
+}
+.truck .circle2{
+    position: relative;
+    bottom: 28px;
+    left: 60%;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 50%;
+    font-size: 14px;
+    background:rgb(255, 0, 149);
+}
+.container .child:hover{
+   
+    color: #ff6e5b;
+}
+.child a{
+    color: inherit;
+    text-decoration: none;
+}

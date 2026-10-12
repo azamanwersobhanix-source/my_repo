@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 23px;
+    margin:5px 5px;
+}
+.form{
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 5px;
+}
+form input{
+    margin-top: 5px;
+    padding: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+button{
+    border: none;
+    margin-bottom: 10px;
+    background: #ff6e5b;
+    border-radius: 5px;
+    padding: 8px 14px;
+    cursor: pointer;
+    color: white;
+}
+select{
+    margin: 5px;
+    outline: none;
+    border: none;
+    background: #bbb9b9;
+    border-radius: 5px;
+    padding: 5px;
+}

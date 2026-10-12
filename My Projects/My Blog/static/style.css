@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.navbar{
+    background: rgba(255, 115, 50,.5);
+}
+.sec2 div img{
+    height: 36vw;
+}

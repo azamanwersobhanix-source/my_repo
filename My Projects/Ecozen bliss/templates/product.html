@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../static/css/product.css">
+    <link rel="stylesheet" href="../static/css/bottombar.css">
+    <title>Product</title>
+</head>
+<body>
+    <!--******************************-->
+    <section class="pdi">
+        <div class="pimg">
+            <img src="../static/imgs/dummy/prod1.jpg" alt="Null">
+        </div>
+         <div class="pd-data">
+                    <p>The exclusive creme for  sldkjfsdlk dsfkjsdkjlsdfl sddfjkjsf</p>
+                    <div class="pd-price"><span class="price">Rs.230</span><span class="pcnt">34% OFF</span></div>
+                    <div class="pd-price">
+                        <span class="xprice"><strike>Rs.230</strike></span>
+                        <span class="hrt" onclick="favit(this)">
+                            <i class="material-icons">favorite</i>
+                            <span class="cnt">23</span>                        
+                        </span>
+                    </div>
+            </div>
+            <hr>
+    </section>
+
+    <!--******************************-->
+
+    <section class="dc">
+        <div class="dcd">Price: <span class="prc">230 PKR</span> </div>
+        <div class="dcd">Delivery Charges: <span class="prc">150 PKR</span> </div>
+        <div class="dcd">Total Price: <span class="prc">380 PKR</span> </div>
+    </section>
+
+    <!--******************************-->
+
+    <section class="dsc">
+        <h2>Description</h2>
+        <div class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam non iusto incidunt dolorem cumque provident amet cum, hic debitis dicta? Cum temporibus quaerat totam, quisquam sequi minima dolore eveniet.
+        </div>
+    </section>
+
+    <!--******************************-->
+    <nav class="bab" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);">
+        <div class="container">
+            <div class="child home" style="color:#ff6e5b"><a href="help.html"><i class="material-icons">help</i><div>help</div></a></div>
+            <div class="child cart"><button type="button">Buy</button><button type="button" style="background-color: white;color: #ff6e5b; border:1px solid #ff6e5b;">Cart</button></div>
+            
+        </div>
+    </nav>
+
+<script>
+    function favit(e){
+        let  h = e.children[0];
+        let hStyle = window.getComputedStyle(h);
+        let c = e.children[1];
+
+        if(hStyle.color != 'rgb(0, 0, 0)') {
+            h.style.color = 'black';
+            data = parseInt(c.textContent);
+            --data;
+            c.textContent = data;
+        }
+        else {
+            h.style.color = 'rgb(255,110,91)';
+            data = parseInt(c.textContent);
+            ++data;
+            c.textContent = data;
+        }
+    }
+</script>
+</body>
+</html>

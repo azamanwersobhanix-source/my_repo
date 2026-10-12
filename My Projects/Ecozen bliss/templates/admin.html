@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../static/css/bottombar.css">
+    <link rel="stylesheet" href="../static/css/account.css">
+    <title>Admin</title>
+    
+</head>
+<body>
+
+    <!--*********************************-->
+    <h1>Admin</h1>
+    <section class="acc">
+        <div class="ac-box">
+            <i class="material-icons">account_circle</i>
+            <form action="/submit" method="post">
+            <div class="email"><i class="material-icons" style="font-size: 27px;display: inline;color: white;background:#ff6e5b;padding: 2px;">email</i><span class="input"><input type="email" placeholder="admin email..."></span></div>
+            <div class="email"><i class="material-icons" style="font-size: 27px;display: inline;color: white;background:#ff6e5b;padding: 2px;">lock</i><span class="input"><input type="password" placeholder="admin password..."></span></div>
+            <div class="fp"><a href="forgot.html">Forgot password</a></div>
+            <button onclick="window.location.href='admin_panel.html'" type="button">Admin Panel</button>
+            </form>       
+        </div>
+    </section>
+
+    <!--*********************************-->
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+.navig{
+    position: fixed;
+    padding-top: 3px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.s2-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: last baseline;
+    height: 100%;
+}
+.s2-container div:hover{
+    color: #ff6e5b;
+    cursor: pointer;
+}
+.ad_title{
+    margin-top: 60px;
+}
+.container{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid rgba(255, 152, 104, 1) ;
+    border-radius: 8px;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+.data{width: 100%;}
+.data .pinfo{
+    display: flex;
+    margin-top: 7px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 3px;
+}
+.pinfo .price{
+    color: #ff6e5b;
+    font-size:17px;
+    font-weight: bolder;
+    flex-grow: 1;
+}
+.pinfo i{
+    color: gray;
+}
+.edit{margin-left: 4px;cursor: pointer;}
+.delete{cursor: pointer;}

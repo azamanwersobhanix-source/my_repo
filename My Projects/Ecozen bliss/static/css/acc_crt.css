@@ -1,0 +1,33 @@
+.acc-crt{
+    height: 88vh;
+    padding: 5px;
+}
+.info{
+    margin-top: 20px;
+}
+.name{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.name span:nth-child(2){
+    font-size: 14px;
+    color: gray;
+}
+.name span:nth-child(2){
+    overflow: hidden;
+    white-space: nowrap;
+    width: 50%;
+    text-align: right;
+    text-overflow: ellipsis;
+
+}
+button{
+    border: none;
+    margin-top: 10px;
+    background: #ff6e5b;
+    border-radius: 5px;
+    padding: 8px 14px;
+    cursor: pointer;
+    color: white;
+}

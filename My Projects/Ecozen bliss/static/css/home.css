@@ -1,0 +1,234 @@
+.searching{
+    position: fixed;
+    padding-top: 3px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.s-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.s-container .flw{
+    height: 40px;
+    margin: 0 3px;
+}
+.s-container .s-tab{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #ff6e5b;
+    height: 40px;
+    width: 100%;
+    margin-right: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.s-tab input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 3px;
+    width: 100%;
+}
+div.inp{width: 100%;text-align: left;}
+.s-tab .btn{
+    border:1px solid #ff6e5b;
+    padding: 6px;
+    color: white;
+    background: #ff6e5b;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.s-img{
+    width: 100%;
+    top: 55px;
+    height: 20vmax;
+    overflow: hidden;
+    position: relative;
+}
+.s-img div{
+    width: 400%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    left: 0vw;
+    white-space: nowrap;
+    padding-bottom: 5px;
+    animation: scrl 20s linear infinite;
+}
+.scroller img{
+    height: 100%;
+    border-radius: 7px;
+    width: 100vw;   
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border:0.5px solid rgba(0,0, 0, 0.1);
+}
+.dots{
+    margin-top: 55px;
+    text-align: center;
+}
+.dots span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    opacity: 0.3;
+    background: #333;
+    border-radius: 50%;  
+    animation: fade 20s infinite;
+}
+
+.dots span:nth-child(1){animation-delay: 0s;}
+.dots span:nth-child(2){animation-delay: 5s;}
+.dots span:nth-child(3){animation-delay: 10s;}
+.dots span:nth-child(4){animation-delay: 15s;}
+
+.foryou{
+    margin: 20px 0;
+}
+.foryou h1{
+    font-size: 23px;
+}
+.foryou .prods{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prods .p{
+    cursor: pointer;
+    width: 95%;
+    height: 15vmax;
+    margin: 5px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.prods .p img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.p .data{
+    width: 98%;
+    padding: 5px;
+    height: 30%;
+    margin-top: 4px;
+    background: rgba(238, 94, 94,0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data .price{
+    color:#ff6e5b;
+}
+.data .dsc{
+    width: 43px;
+    height: 43px;
+    padding-top: 10px;
+    font-size: 15;
+    color: white;
+    text-align: center;
+    background: url('../imgs/ux/dscnt.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+.shopit{
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+.shopit h1{
+    font-size: 23px;
+}
+
+.pd-container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.pd-container .box{
+    flex:1 1 150px;
+    cursor: pointer;
+    padding: 5px;
+    -webkit-tap-highlight-color: transparent;
+    margin: 3px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.pd-data p{
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 145px;
+    font-size: 20px;
+    text-overflow: ellipsis;
+}
+.pd-price{
+    margin-top: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pd-price .price{
+    color: #ff6e5b;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pd-price .pcnt{
+    background-color: rgba(255, 117, 117, 0.3);
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.hrt i{
+    color:#ff6e5b;
+}
+
+.select{width: 100%;}
+.select .dds{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.dds select{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fade{
+    0%{opacity: 0.3;}
+    5%{opacity: .7;}
+    25%{opacity: .7;}
+    30%{opacity: 0.3;}
+    100%{opacity: 0.3;}
+}
+
+@keyframes scrl{
+    0%{left: 0vw;}
+    25%{left: 0vw;}
+    26%{left: -100vw;}
+    50%{left: -100vw;}
+    51%{left: -200vw;}
+    75%{left: -200vw;}
+    76%{left: -302vw;}
+    100%{left: -302vw;}
+}

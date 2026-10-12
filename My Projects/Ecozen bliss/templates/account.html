@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../static/css/bottombar.css">
+    <link rel="stylesheet" href="../static/css/account.css">
+    <title>Account</title>
+    
+</head>
+<body>
+
+    <!--*********************************-->
+    <h1>Account</h1>
+    <section class="acc">
+        <div class="ac-box">
+            <i class="material-icons">account_circle</i>
+            <form action="/submit" method="post">
+            <div class="email"><i class="material-icons" style="font-size: 27px;display: inline;color: white;background:#ff6e5b;padding: 2px;">email</i><span class="input"><input type="email" placeholder="write your email..."></span></div>
+            <div class="email"><i class="material-icons" style="font-size: 27px;display: inline;color: white;background:#ff6e5b;padding: 2px;">lock</i><span class="input"><input type="password" placeholder="write your password..."></span></div>
+            <div class="reg">Don't have an account?<a href="reg.html" style="color: orangered;">Register</a></div>
+            <div class="fp"><a href="forgot.html">Forgot password</a></div>
+            <button type="submit">Login</button>
+            </form>       
+        </div>
+    </section>
+
+    <!--*********************************-->
+    <nav class="bab">
+        <hr>
+        <div class="container">
+            <div class="child home"><a href="home.html"><i class="material-icons">home</i><div>Home</div></a></div>
+            <div class="child cart"><a href="cart.html"><i class="material-icons"><span class="circle">4</span>shopping_cart</i><div>Cart</div></a></div>
+            <div class="child video"><a href="vids.html"><i class="material-icons">smart_display</i></a></div>
+            <div class="child truck"><a href="orders.html"><span class="circle2">2</span><i class="material-icons">local_shipping</i><div>Order(s)</div></a></div>
+            <div class="child account" style="color:#ff6e5b"><a href="account.html"><i class="material-icons">account_circle</i><div>Account</div></a></div>
+            
+        </div>
+    </nav>
+
+</body>
+</html>
